@@ -20,6 +20,9 @@ metadata:
   name: ora-se-symposium-backend-service
 spec:
   replicas: 4
+  selector:
+    matchLabels:
+     app: $APP_NAME
   template:
     metadata:
       labels:
