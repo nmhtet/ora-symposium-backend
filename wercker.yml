@@ -81,12 +81,12 @@ kubernetes-deploy:
           cat ./backend-api-deployment.yaml
 
 # Comment this step if you have not created a secret manuallly / You are running the Wercker build for the first time 
-  #  - kubectl:
-   #     server: $KUBE_ENDPOINT
-   #     token: $KUBE_USER_TOKEN
-    #    insecure-skip-tls-verify: true
-    #    cwd: $WERCKER_ROOT/.
-    #    command: -n $K8SNAMESPACE delete secret $OCIR_SECRET_NAME
+    - kubectl:
+        server: $KUBE_ENDPOINT
+        token: $KUBE_USER_TOKEN
+        insecure-skip-tls-verify: true
+        cwd: $WERCKER_ROOT/.
+        command: -n $K8SNAMESPACE delete secret $OCIR_SECRET_NAME
 
     - kubectl:
         server: $KUBE_ENDPOINT
