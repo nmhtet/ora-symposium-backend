@@ -1,4 +1,6 @@
 {
-    "connectionString": "mongodb://myohtet-mongodb-replicaset-0.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017,myohtet-mongodb-replicaset-1.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017,myohtet-mongodb-replicaset-2.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017/?replicaSet=ora-se-symposium-backend-service-d4844c95f&readPreference=secondaryPreferred",
+    "connectionString": "mongodb://myohtet-mongodb-replicaset-0.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017,myohtet-mongodb-replicaset-1.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017,myohtet-mongodb-replicaset-2.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017/?replicaSet=ora-se-symposium-backend-service-967d6fcc6",
     "secret": "OrAcLe@Se_SyMpoSiUm_2018_JaIpUr!"
 }
+
+# mongodb://db0.example.com:27017,db1.example.com:27017,db2.example.com:27017/?replicaSet=myRepl
