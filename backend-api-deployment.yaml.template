@@ -13,7 +13,8 @@ spec:
   selector:
     app: $APP_NAME
 ---
-apiVersion: extensions/v1beta1
+#apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ora-se-symposium-backend-service
