@@ -1,4 +1,5 @@
 {
-    "connectionString": "mongodb://myohtet-mongodb-replicaset-0.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017,myohtet-mongodb-replicaset-1.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017,myohtet-mongodb-replicaset-2.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017"
+    "connectionString": "mongodb://myohtet-mongodb-replicaset-0.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017,myohtet-mongodb-replicaset-1.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017,myohtet-mongodb-replicaset-2.myohtet-mongodb-replicaset.nay.svc.cluster.local:27017",
+    "secret": "OrAcLe@Se_SyMpoSiUm_2018_JaIpUr!"
     
 }
