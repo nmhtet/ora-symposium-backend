@@ -13,16 +13,16 @@ spec:
   selector:
     app: $APP_NAME
 ---
-#apiVersion: extensions/v1beta1
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: ora-se-symposium-backend-service
+  labels:
+   app: $APP_NAME
 spec:
   replicas: 4
-  selector:
-    matchLabels:
-     app: $APP_NAME
+  strategy:
+    type: RollingUpdate
   template:
     metadata:
       labels:
@@ -33,8 +33,7 @@ spec:
       - name: $OCIR_SECRET_NAME
       containers:
       - name: $APP_NAME
-        #image: $PRIVATE_REGISTRY_PATH/$TENANCY_NAME/$REPO_NAME/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
-        image: $PRIVATE_REGISTRY_PATH/$REPO_NAME/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
+        image: $PRIVATE_REGISTRY_PATH/$TENANCY_NAME/$REPO_NAME/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
         ports:
         - containerPort: 4000
           protocol: TCP
